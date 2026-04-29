@@ -13,3 +13,5 @@
 
 ### Pelicula vinculada a un genero - FORMATO JSON
 ![PELICULAS- GENERO EN JSON](./docs/2.png)
+### PELICULA CON REVIEW
+![PELICULAS- GENERO EN JSON](./docs/5.png)
