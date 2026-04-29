@@ -12,13 +12,14 @@ class GenreSerializer(serializers.ModelSerializer):
         ]
 
 
-# NUEVO
+# Review como entidad independiente en API
 class ReviewSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Review
         fields = [
             "id",
+            "movie_id",
             "reviewer_name",
             "rating",
             "comment",
@@ -33,12 +34,6 @@ class MovieSerializer(serializers.ModelSerializer):
         read_only=True
     )
 
-    # NUEVO
-    reviews = ReviewSerializer(
-        many=True,
-        read_only=True
-    )
-
     class Meta:
         model = Movie
         fields = [
@@ -46,6 +41,5 @@ class MovieSerializer(serializers.ModelSerializer):
             "title",
             "description",
             "release_date",
-            "genres",
-            "reviews"  # CAMBIO
+            "genres"
         ]
