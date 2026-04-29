@@ -2,8 +2,8 @@
 
 ## William Julon Mejia
 
-### Creacion del Proyecto
 
+### Creacion del Proyecto
 ![creacion del proyecto](./docs/djangpbase.png)
 ### Listado de peliculas - FORMATO JSON
 ![PELICULAS EN JSON](./docs/4.png)
